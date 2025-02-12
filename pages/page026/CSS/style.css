@@ -1,0 +1,117 @@
+@import url(variables.css);
+
+/* Estilo general */
+body{
+    background-color: var(--fondo-negro);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left{
+    width: 600px;
+    height: 680px;
+    background: var(--fondo-negro);
+    position: absolute;
+    top: 80px;
+    left: 180px;
+}
+.header-text {
+    font-family: "Montserrat-ExtraBold";
+    color: var(--texto-blanco);
+    font-size: 64px;
+    margin-top: 50px;
+}
+.highlight {
+    color: var(--rojo);
+}
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 -20px;
+    transition: transform 0.3s ease;
+}
+.circle-img:hover {
+    transform: scale(1.1);
+}
+.lorem{
+    margin-top: 30px;
+    font-family: "Montserrat-Regular";
+    color: var(--texto-blanco);
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.butn {
+    font-family: "Montserrat-Regular";
+    color: var(--texto-blanco);
+    font-size: 24px;
+    background: var(--rojo);
+    border: none;
+    padding: 24px 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+}
+.butn:hover {
+    background-color: #3f1111;
+}
+
+.right{
+    width: 650px;
+    height: 800px;
+    background: var(--fondo-negro);
+    position: absolute;
+    top: 80px;
+    right: 180px;
+    z-index: -1; /*Mover en Z (Profundidad)*/
+}
+.big-img {
+    width: 650px;
+    height: 706px;
+    border-radius: 50%;
+}
+
+/* Estilo de los botones */
+.bottom{
+    width: 1500px;
+    height: 100px;
+    background: var(--fondo-negro);
+    position: absolute;
+    bottom: 80px;
+    left: 175px;
+}
+.btn {
+    background: linear-gradient(to right, var(--texto-blanco), transparent 80%); /* Degradado gris claro a negro en los botones */
+    color: var(--texto-blanco);
+    border: none;
+    padding: 24px 40px;
+    font-size: 24px;
+    font-family: "Montserrat-SemiBold";
+    border-radius: 50px;
+    display: inline-block;
+}
+/* Botones alineados de forma equidistante */
+.bottom > .btn:nth-child(1) {
+    margin: 10px;
+    margin-left: 50px; /* Primer botón con margen izquierdo */
+}
+.bottom > .btn:nth-child(2) {
+    margin-left: 182px;
+    margin-right: 182px; /* Botón del medio con espacio entre los otros dos */
+}
+.bottom > .btn:nth-child(3) {
+    margin-right: 50px; /* Tercer botón con margen derecho */
+}
+
