@@ -1,0 +1,74 @@
+@import url(variables.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+header {
+    width: 933px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 72px;
+    font-family: "Avenir-Heavy";
+    color: var(--color-1);
+}
+.design__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+    gap: 16px;
+}
+
+.design__item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.design__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.design__item h2 {
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    color: var(--color-4);
+}
+
+.design__item p {
+    font-family: "Avenir-Roman";
+    font-size: 24px;
+    color: var(--color-3);
+    margin-top: 12px;
+}
+
+.design__info {
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient( 00deg, #00000049 , #ffffff00);
+    position: relative;
+    top: -16.9svh;
+    padding: 24px;
+}
+.design__info h3 {
+    font-family: "Avenir-Roman";
+    font-size: 34px;
+    color: var(--color-1);
+
+}
+.design__info p{
+    width: 253px;
+    font-family: "Avenir-Roman";
+    font-size: 18px;
+    color: var(--color-1);
+}
