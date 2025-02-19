@@ -1,0 +1,144 @@
+@import url('variables.css');
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    grid-template-areas: 
+    "article gallery";
+    gap: 10px;
+}
+
+.article {
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+}
+.article h1{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: left;
+    font-family: "Play-Bold";
+    font-size: 64px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--color-1);
+}
+.article p{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: "Work-Regular";
+    font-size: 26px;
+    color: var(--color-2);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 5vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.buttons :nth-child(1){
+    height: 50px;
+    width: 200px;
+    font-family: "Work-Medium";
+    color: var(--color-3);
+    background-color: var(--color-1);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20%;
+}
+.buttons :nth-child(2){
+    height: 50px;
+    width: 200px;
+    font-family: "Work-Medium";
+    color: var(--color-1);
+    background-color: var(--color-3);
+    font-size: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-3);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 100%;
+    margin-left: 5vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    margin: 0px;
+}
+.icon-item img {
+    width: 12%; 
+    height: auto;
+    margin-bottom: 5px;
+}
+.icon-item p {
+    font-family: "Work-Regular";
+    font-size: 14px;
+    color: #111111;
+    margin-left: 0%;
+    margin-top: 2%;
+    margin-right: auto;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 90%;
+}
+.image-box img {
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 100vh;
+        height: 100vh;
+        width: 100%;
+        grid-template-areas: 
+        "article"
+        "gallery";
+        gap: 10px;
+    }
+    .gallery {
+        align-self: center;
+        justify-self: center;
+    }
+}

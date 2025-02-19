@@ -1,0 +1,18 @@
+:root{
+    --color-1:#050505;
+    --color-2:#333333;
+    --color-3:#FFFFFF;
+    --color-4:#685FD4;
+}
+@font-face{
+    font-family: "Play-Bold";
+    src: url(../storage/fonts/PlayfairDisplay-Bold.ttf);
+}
+@font-face{
+    font-family: "Work-Medium";
+    src: url(../storage/fonts/WorkSans-Medium.ttf);
+}
+@font-face{
+    font-family: "Work-Regular";
+    src: url(../storage/fonts/WorkSans-Regular.ttf);
+}
