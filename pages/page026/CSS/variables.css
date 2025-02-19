@@ -1,0 +1,24 @@
+:root {
+    --fondo-negro: #080C15;
+    --texto-blanco: #FFFFFF;
+    --rojo: #CD292A;
+    --espacio-boton: 20px;
+}
+
+@font-face{
+    font-family: 'Montserrat-ExtraBold';
+    src: url(../Storage/font/Montserrat/Montserrat-ExtraBold.ttf);
+}
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url(../Storage/font/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url(../Storage/font/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url(../Storage/font/Montserrat/Montserrat-SemiBold.ttf);
+}
+
