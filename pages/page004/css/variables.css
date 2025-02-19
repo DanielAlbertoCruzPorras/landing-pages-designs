@@ -1,0 +1,13 @@
+:root{
+    --color-1:#252525;
+    --color-1:hsla(0, 0%, 15%, 0.800);
+    --color-3:hsla(0, 0%, 100%, 1);
+}
+@font-face{
+    font-family: "Avenir-Heavy";
+    src: url(../storage/fonts/AvenirLTStd-Heavy.otf);
+}
+@font-face{
+    font-family: "Avenir-Roman";
+    src: url(../font/Montserrat/static/AvenirLTStd-Roman.otf);
+}
