@@ -1,0 +1,107 @@
+@import url('variables.css');
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 50vh);
+    gap: 10px;
+    grid-template-areas:
+        "article article right right right"
+        "article article right right right"
+        "gallery gallery gallery gallery gallery";
+}
+
+.article {
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+    padding-left: 40px;
+}
+.article h1{
+    justify-content: left;
+    font-family: "Avenir-Heavy";
+    font-size: 64px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--color-1);
+}
+.article p{
+    font-family: "Avenir-Roman";
+    font-size: 26px;
+    margin-top: 10px;
+    color: var(--color-2);
+}
+.article button{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    font-family: "Avenir-Roman";
+    color: var(--color-3);
+    background-color: var(--color-1);
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.right{
+    grid-area: right;
+    display: grid;
+    padding: 20px;
+    align-items: center;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 33.3%);
+    grid-template-areas:
+        "img1 img1 . ."
+        "img1 img1 img2 img2"
+        ". . img2 img2";
+}
+.right :nth-child(1){
+    grid-area: img1;
+    padding-right: 10px;
+}
+.right :nth-child(2){
+    grid-area: img2;
+    padding-left: 10px;
+}
+
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+.gallery h2{
+    justify-content: left;
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    margin: 5px;
+    color: hsla(0, 0%, 15%, 0.250);
+}
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 50vh);
+        gap: 10px;
+        grid-template-areas:
+        "article article article"
+        "article article article"
+        "right right right"
+        "right right right"
+        "gallery gallery gallery";
+    }
+}
