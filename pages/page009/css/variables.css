@@ -1,0 +1,20 @@
+:root {
+    --color-1: #FFFFFF;
+    --color-2: #363830;
+    --color-3: rgb(8, 8, 8);
+    --color-4: #E5B94B;
+    --color-5: #9C2004;
+}
+
+@font-face {
+    font-family: "PopBold";
+    src: url(../storage/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "PopSemi";
+    src: url(../storage/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: "PopRegular";
+    src: url(../storage/fonts/Poppins-Regular.ttf);
+}

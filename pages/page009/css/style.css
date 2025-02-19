@@ -1,0 +1,122 @@
+@import url('variables.css');
+
+body {
+    background-image: linear-gradient(135deg, #C8CCCF, #97A3A3);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    ". title title title title title . ."
+    ". title title title title title . ."
+    ". . stats stats stats stats stats stats"
+    ". . stats stats stats stats stats stats";
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title{
+    z-index: 2;
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+.title h1{
+    padding-left: 5vw;
+    font-family: "PopBold";
+    font-size: 88px;
+    margin: 0%;
+    color: var(--color-2);
+}
+.title p{
+    padding-left: 5vw;
+    font-family: "PopRegular";
+    font-size: 24px;
+    margin: 0%;
+    color: var(--color-2);
+}
+.title button{
+    margin-left: 5vw;
+    margin-right: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    height: 66px;
+    width: 182px;
+    font-family: "PopRegular";
+    font-size: 24px;
+    color: var(--color-1);
+    background-color: var(--color-2);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+.stats-container {
+    z-index: 2;
+    grid-area: stats;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+.stats {
+    z-index: 2;
+    grid-area: stats;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.300);
+    font-family: "PopRegular";
+    font-size: 16px;
+    border-radius: 18vw;
+    height: 70%;
+    width: 90%;
+    text-align: left;
+}
+.stat{
+    padding: 5vw;
+}
+.line {
+    width: 36px;
+    height: 3px; 
+    background-color: #000; 
+    margin: 15px 0; 
+}
+.stat h2{
+    font-family: "PopSemi";
+    font-size: 24px;
+}
+
+.images{
+    grid-area: images;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+.images :nth-child(1){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30vw; 
+    height: auto;
+    padding-right: 6vw;
+}
+.images :nth-child(2){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25vw; 
+    height: auto;
+    padding-left: 6vw;
+}
