@@ -27,7 +27,7 @@ body {
     z-index: 2;
 }
 .SIDEBAR:hover {
-    width: 20vw;
+    width: 15vw;
     transition: 0.5s ease;
 }
 .SIDEBAR svg {
@@ -59,11 +59,15 @@ body {
 .info h2 {
     background: transparent;
     color: white;
+    font-family: "Avenir-Heavy";
+    margin-top: 5vh;
+    margin-bottom: 2vh;
 }
 .info p {
     background: transparent;
     color: white;
-    margin-bottom: 40vh;
+    font-family: "Avenir-Roman";
+    margin-bottom: 35vh;
 }
 .SIDEBAR:hover .info {
     opacity: 1;
@@ -109,12 +113,18 @@ body {
     z-index: 1;
     padding-left: 70px;
 }
-
-
+.HOME header h1 {
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    margin-top: 5vh;
+}
+.HOME header p {
+    font-family: "Avenir-Roman";
+}
 .carousel {
     /* Carrusel*/
     
-    height: 65vh;
+    height: 50vh;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -128,15 +138,9 @@ body {
     display: none;
     /* Ocultar scrollbar en Chrome/Safari */
 }
-.carousel .carousel-item:nth-child(1) {
-    height: inherit;
-    width: 90vw;
-    background-image: url('../storage/img/COLDPLAY-WT.jpg');    /* Ruta de la imagen */
-    background-size: cover;    /* Ajusta la imagen para cubrir el contenedor */
-    background-position: center 10%;    /* Centra la imagen */
-    background-repeat: no-repeat;    /* Evita que la imagen se repita */
-    background-attachment: scroll;    /* Fija la imagen al hacer scroll */
-    border-radius: 12px;
+.carousel .card-div {
+    height: 50vh;
+    width: 95.83vh;  
     flex-shrink: 0;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -145,21 +149,13 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
-.carousel-item:hover{
-    transform: scale(0.95);
+.carousel .card-div:hover{
+    transform: scale(0.9);
 }
-.carousel .carousel-item:nth-child(2) {
-    height: inherit;
-    width: 90vw;
-    background-image: url('../storage/img/MUSE-WT.jpg');    /* Ruta de la imagen */
-    background-size: cover;    /* Ajusta la imagen para cubrir el contenedor */
-    background-position: center 10%;    /* Centra la imagen */
-    background-repeat: no-repeat;    /* Evita que la imagen se repita */
-    background-attachment: scroll;    /* Fija la imagen al hacer scroll */
-    border-radius: 12px;
-    flex-shrink: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.card img {
+    display: block;
+    height: 50vh;
+    width: 95.83vh;
+    padding: 20px;
+    border-radius: 40px;
 }
